@@ -11,7 +11,7 @@ async def main():
     print("Room Created:", room_response)
 
     # Create Team
-    team_response = await client.create_team("name": "ZL Team")
+    team_response = await client.create_team({"name": "ZL Team"})
     print("Team Created:", team_response)
 
 asyncio.run(main())
